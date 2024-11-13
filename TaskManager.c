@@ -5,7 +5,7 @@
 #include <string.h>
 #include <time.h>
 
-#define TASKF "test.dat"
+#define TASKF "tasks.dat"
 #define COUNTF "count_task.dat"
 
 int count;
@@ -126,22 +126,22 @@ int CreateTask(char *desc){
         return 1;
     }
 
-    printf("введите день, до которого будете делать задание: ");
+    printf("введите кол-во дней, которые вы будете делать таск: ");
     scanf("%d", &userPointDate[0]);
 
     while( getchar() != '\n' );
 
-    printf("введите час, до которого будете делать задание: ");
+    printf("введите кол-во часов, которые вы будете делать таск: ");
     scanf("%d", &userPointDate[1]);
     
     while( getchar() != '\n' );
 
-    printf("введите минуту, до которой будете делать задание: ");
+    printf("введите кол-во минут, которые вы будете делать задание: ");
     scanf("%d", &userPointDate[2]);
 
     while( getchar() != '\n' );
 
-    printf("введите секунду, до которой будете делать задание: ");
+    printf("введите кол-во секунд, которые вы будете делать задание: ");
     scanf("%d", &userPointDate[3]);
 
     while( getchar() != '\n' );
